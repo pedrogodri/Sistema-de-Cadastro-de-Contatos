@@ -15,8 +15,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Sistema.Cadastro.Contatos
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/pedro/Documents/Sistema-de-Cadastro-de-Contatos-MVC/SlnSistemaContatos/src/Sistema.Cadastro.Contatos/Views/Contato/Apagar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xBcGFnYXIuY3NodG1s
+[D:/pedro/Documents/Sistema-de-Cadastro-de-Contatos-MVC/SlnSistemaContatos/src/Sistema.Cadastro.Contatos/Views/Contato/ApagarConfirmacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xBcGFnYXJDb25maXJtYWNhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/pedro/Documents/Sistema-de-Cadastro-de-Contatos-MVC/SlnSistemaContatos/src/Sistema.Cadastro.Contatos/Views/Contato/Criar.cshtml]
