@@ -1,6 +1,13 @@
-﻿namespace Sistema.Cadastro.Contatos.Data
+﻿using Microsoft.EntityFrameworkCore;
+using Sistema.Cadastro.Contatos.Models;
+
+namespace Sistema.Cadastro.Contatos.Data
 {
-    public class ContextDatabase
+    public class ContextDatabase : DbContext
     {
+        public ContextDatabase(DbContextOptions<ContextDatabase> options)
+            : base(options) { }
+
+        public DbSet<ContatoModel> Contatos { get; set; }
     }
 }
