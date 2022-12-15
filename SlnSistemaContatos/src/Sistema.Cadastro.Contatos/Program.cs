@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using Sistema.Cadastro.Contatos.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Context DB SQL Server
+builder.Services.AddDbContext<ContextDatabase>
+    (options => options.UseSqlServer("Server=DESKTOP-JB24L2U;Database=DatabaseSistemaContato;User Id=sa;Password=admin;"));
+
 
 var app = builder.Build();
 

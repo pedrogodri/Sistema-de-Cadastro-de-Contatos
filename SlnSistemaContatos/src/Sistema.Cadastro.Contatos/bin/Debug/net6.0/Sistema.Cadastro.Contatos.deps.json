@@ -9,6 +9,7 @@
       "Sistema.Cadastro.Contatos/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.12",
+          "Microsoft.EntityFrameworkCore.Design": "6.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.12"
