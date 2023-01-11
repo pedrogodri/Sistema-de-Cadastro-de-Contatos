@@ -10,6 +10,12 @@ namespace Sistema.Cadastro.Contatos.Repository
         {
             _bancoContext = bancoContext;
         }
+
+        public List<ContatoModel> ListarContatos()
+        {
+            return _bancoContext.Contatos.ToList();
+        }
+        
         public ContatoModel Adicionar(ContatoModel contato)
         {
             //Gravar na Database 
