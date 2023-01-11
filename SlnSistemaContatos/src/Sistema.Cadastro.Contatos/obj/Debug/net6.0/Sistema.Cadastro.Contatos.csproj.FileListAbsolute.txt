@@ -62,3 +62,8 @@ D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Si
 D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Sistema.Cadastro.Contatos\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Sistema.Cadastro.Contatos\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Sistema.Cadastro.Contatos\obj\Debug\net6.0\Sistema.Cadastro.Contatos.csproj.CopyComplete
+D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Sistema.Cadastro.Contatos\obj\Debug\net6.0\staticwebassets\msbuild.Sistema.Cadastro.Contatos.Microsoft.AspNetCore.StaticWebAssets.props
+D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Sistema.Cadastro.Contatos\obj\Debug\net6.0\staticwebassets\msbuild.build.Sistema.Cadastro.Contatos.props
+D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Sistema.Cadastro.Contatos\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Sistema.Cadastro.Contatos.props
+D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Sistema.Cadastro.Contatos\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Sistema.Cadastro.Contatos.props
+D:\pedro\Documents\Sistema-de-Cadastro-de-Contatos-MVC\SlnSistemaContatos\src\Sistema.Cadastro.Contatos\obj\Debug\net6.0\staticwebassets.pack.json
