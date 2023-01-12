@@ -46,5 +46,17 @@ namespace Sistema.Cadastro.Contatos.Repository
 
             return contatoDB;
         }
+
+        public bool Apagar(int id)
+        {
+            //Apagar da Database
+            ContatoModel contatoDB = BuscarId(id);
+
+            if (contatoDB == null) throw new System.Exception("Houve um erro na exclusão do contato");
+
+            _bancoContext.Contatos.Remove(contatoDB);
+            _bancoContext.SaveChanges();
+            return true;
+        }
     }
 }

@@ -8,5 +8,6 @@ namespace Sistema.Cadastro.Contatos.Repository
         List<ContatoModel> ListarContatos();
         ContatoModel Adicionar(ContatoModel contato);
         ContatoModel Atualizar(ContatoModel contato);
+        bool Apagar(int id);
     }
 }
