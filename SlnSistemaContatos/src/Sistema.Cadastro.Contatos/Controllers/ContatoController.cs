@@ -36,31 +36,67 @@ namespace Sistema.Cadastro.Contatos.Controllers
 
         public IActionResult Apagar(int id)
         {
-            _contatoRepositorio.Apagar(id);
-            return RedirectToAction("Index");
+            try
+            {
+                bool apagado = _contatoRepositorio.Apagar(id);
+                if(apagado) 
+                {
+                    TempData["MensagemSucesso"] = "Contato excluído com sucesso";
+                }
+                else
+                {
+                    TempData["MensagemSucesso"] = "Contato não foi excluído corretamente";
+                }
+                return RedirectToAction("Index");
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Contato não foi excluído corretamente, detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+            
         }
 
         [HttpPost]
         public IActionResult Criar(ContatoModel contato)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _contatoRepositorio.Adicionar(contato);
+                if (ModelState.IsValid)
+                {
+                    _contatoRepositorio.Adicionar(contato);
+                    TempData["MensagemSucesso"] = "Contato cadastrado com sucesso";
+                    return RedirectToAction("Index");
+                }
+
+                return View(contato);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Contato não foi cadastrado corretamente, detalhe do erro: {erro.Message}";
                 return RedirectToAction("Index");
             }
-
-            return View(contato);
         }
 
         [HttpPost]
         public IActionResult Editar(ContatoModel contato)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _contatoRepositorio.Atualizar(contato);
+                if (ModelState.IsValid)
+                {
+                    _contatoRepositorio.Atualizar(contato);
+                    TempData["MensagemSucesso"] = "Contato aletrado com sucesso";
+                    return RedirectToAction("Index");
+                }
+                return View(contato);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Contato não foi alterado corretamente, detalhe do erro: {erro.Message}";
                 return RedirectToAction("Index");
             }
-            return View(contato);
+
         }
     }
 }
