@@ -9,5 +9,6 @@ namespace Sistema.Cadastro.Contatos.Data
             : base(options) { }
 
         public DbSet<ContatoModel> Contatos { get; set; }
+        public DbSet<UsuarioModel> Usuarios { get; set; }
     }
 }
