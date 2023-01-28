@@ -13,6 +13,7 @@ builder.Services.AddDbContext<ContextDatabase>
 
 // Repositories
 builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
+builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
 var app = builder.Build();
 
