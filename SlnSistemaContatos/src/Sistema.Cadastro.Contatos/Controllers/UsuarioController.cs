@@ -44,5 +44,71 @@ namespace Sistema.Cadastro.Contatos.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        public IActionResult ApagarConfirmacao(int id)
+        {
+            UsuarioModel usuario = _usuarioRepositorio.BuscarId(id);
+            return View(usuario);
+        }
+        
+        public IActionResult Apagar(int id)
+        {
+            try
+            {
+                bool apagado = _usuarioRepositorio.Apagar(id);
+                if (apagado)
+                {
+                    TempData["MensagemSucesso"] = "Usuário excluído com sucesso";
+                }
+                else
+                {
+                    TempData["MensagemSucesso"] = "Usuário não foi excluído corretamente";
+                }
+                return RedirectToAction("Index");
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Usuário não foi excluído corretamente, detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+
+        }
+
+        public IActionResult Editar(int id)
+        {
+            UsuarioModel usuario = _usuarioRepositorio.BuscarId(id);
+            return View(usuario);
+        }
+
+        [HttpPost]
+        public IActionResult Editar(UsuarioSemSenhaModel usuarioSemSenha)
+        {
+            try
+            {
+                UsuarioModel usuario = null;
+                if (ModelState.IsValid)
+                {
+                    usuario = new UsuarioModel()
+                    {
+                        Id = usuarioSemSenha.Id,
+                        Nome = usuarioSemSenha.Nome,
+                        Login = usuarioSemSenha.Login,
+                        Email = usuarioSemSenha.Email,
+                        Perfil = usuarioSemSenha.Perfil
+                    };
+                    usuario = _usuarioRepositorio.Atualizar(usuario);
+                    TempData["MensagemSucesso"] = "Usuário alterado com sucesso";
+                    return RedirectToAction("Index");
+                }
+                return View(usuario);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Usuário não foi alterado corretamente, detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+
+        }
+
     }
 }
