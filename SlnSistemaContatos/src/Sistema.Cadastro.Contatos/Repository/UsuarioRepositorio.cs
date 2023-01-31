@@ -12,6 +12,11 @@ namespace Sistema.Cadastro.Contatos.Repository
             this._bancoContext = bancoContext;
         }
 
+        public UsuarioModel BuscarLogin(string login)
+        {
+            return _bancoContext.Usuarios.FirstOrDefault(x => x.Login.ToUpper() == login.ToUpper());
+        }
+
         public UsuarioModel BuscarId(int id)
         {
             return _bancoContext.Usuarios.FirstOrDefault(x => x.Id == id);
@@ -59,5 +64,6 @@ namespace Sistema.Cadastro.Contatos.Repository
             _bancoContext.SaveChanges();
             return true;
         }
+
     }
 }
