@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JVHmiZJHsJaLTP6INJki2RKqp8B0gh4tnyOHcq/Vz/U32/X9m8Mz56WM0jy8lpmOPHfaSX8JexyLfxdb9FSR9Q==",
+  "dgSpecHash": "ZTwQ+fsC3rUzT4rbv+Z3LXRO9p53HCQ7BUlwqeWmjWwGdG/kogM7cwmXlsPd2vz5PJ5NXMkWrms870RFjlHQ+w==",
   "success": true,
   "projectFilePath": "D:\\pedro\\Documents\\Sistema-de-Cadastro-de-Contatos-MVC\\SlnSistemaContatos\\src\\Sistema.Cadastro.Contatos\\Sistema.Cadastro.Contatos.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\pedro\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
