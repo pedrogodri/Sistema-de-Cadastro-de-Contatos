@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿
+using Newtonsoft.Json;
 using Sistema.Cadastro.Contatos.Models;
 using System.Text.Json.Serialization;
 
@@ -8,7 +9,7 @@ namespace Sistema.Cadastro.Contatos.Helper
     {
         private readonly IHttpContextAccessor _httpContext;
 
-        public Sessao(HttpContextAccessor httpContext)
+        public Sessao(IHttpContextAccessor httpContext)
         {
             _httpContext = httpContext;
         }

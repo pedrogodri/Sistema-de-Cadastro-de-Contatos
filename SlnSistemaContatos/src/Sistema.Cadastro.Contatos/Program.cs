@@ -17,8 +17,9 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // Repositories
 builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
 builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
-builder.Services.AddScoped<ISessao, Sessao>();
 
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<ISessao, Sessao>();
 builder.Services.AddSession(o =>
 {
     o.Cookie.HttpOnly = true;
@@ -27,7 +28,7 @@ builder.Services.AddSession(o =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipelineHelper.ISessao Lifetime: Scoped ImplementationType: Sistema.Cadastro.Contatos.Helper.Sessao': Unable to resolve service for type 'Microsoft.AspNetCore.Http.HttpContextAccessor' while attempting to activate 'Sistema.Cadastro.Contatos.Helper.Sessao'..
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
