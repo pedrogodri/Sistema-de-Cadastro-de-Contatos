@@ -27,6 +27,12 @@ namespace Sistema.Cadastro.Contatos.Controllers
             }
             return View();
         }
+
+        public IActionResult Sair()
+        {
+            _sessao.RemoverSessaoUsuario();
+            return RedirectToAction("Index", "Login");
+        }
         
         [HttpPost]
         public IActionResult Entrar(LoginModel loginModel)
@@ -46,6 +52,7 @@ namespace Sistema.Cadastro.Contatos.Controllers
                         }
                         TempData["MensagemErro"] = $"Senha do usuário é inválida. Por favor, tente novamente";
                     }
+
                     TempData["MensagemErro"] = $"Usuário e/ou senha inválido(s). Por favor, tente novamente";
                 } 
                 return View("Index");
