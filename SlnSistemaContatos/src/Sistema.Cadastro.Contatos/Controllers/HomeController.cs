@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Sistema.Cadastro.Contatos.Filters;
 using Sistema.Cadastro.Contatos.Models;
 using System.Diagnostics;
 
 namespace Sistema.Cadastro.Contatos.Controllers
 {
+    [PaginaUsuarioLogado]
     public class HomeController : Controller
     {
         public IActionResult Index()
