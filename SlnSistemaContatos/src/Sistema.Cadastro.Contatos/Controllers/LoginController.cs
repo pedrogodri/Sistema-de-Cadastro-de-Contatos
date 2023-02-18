@@ -28,6 +28,39 @@ namespace Sistema.Cadastro.Contatos.Controllers
             return View();
         }
 
+        public IActionResult RedefinirSenha()
+        {
+            return View();
+        }
+
+        [HttpPost] 
+        public IActionResult EnviarLinkRedefinirSenha(RedefinirSenhaModel redefinirSenhaModel)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    UsuarioModel usuario = _usuarioRepositorio.BuscarEmailLogin(redefinirSenhaModel.Email, redefinirSenhaModel.Login);
+
+                    if (usuario != null)
+                    {
+                        string novaSenha = usuario.GerarNovaSenha();
+
+                        TempData["MensagemSucesso"] = $"Enviamos para o seu email cadastrado uma nova senha";
+                        return RedirectToAction("Index", "Login");
+                    }
+
+                    TempData["MensagemErro"] = $"Não conseguimos redefnir sua senha. Por favor, verifique seus dados informados";
+                }
+                return View("Index");
+            }
+            catch (Exception erro)
+            {
+                TempData["MensagemErro"] = $"Não conseguimos redefinir sua senha, detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+        }
+
         public IActionResult Sair()
         {
             _sessao.RemoverSessaoUsuario();
@@ -63,6 +96,7 @@ namespace Sistema.Cadastro.Contatos.Controllers
                 return RedirectToAction("Index");
             }
         }
+
     }
 
 }

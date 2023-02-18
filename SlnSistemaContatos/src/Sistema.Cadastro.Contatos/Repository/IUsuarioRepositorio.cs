@@ -5,6 +5,7 @@ namespace Sistema.Cadastro.Contatos.Repository
     public interface IUsuarioRepositorio
     {
         UsuarioModel BuscarLogin(string login);
+        UsuarioModel BuscarEmailLogin(string email, string login);
         UsuarioModel BuscarId(int id);
         List<UsuarioModel> ListarContatos();
         UsuarioModel Adicionar(UsuarioModel usuario);
