@@ -10,16 +10,15 @@ builder.Services.AddControllersWithViews();
 
 // Context DB SQL Server
 builder.Services.AddDbContext<ContextDatabase>
-    (options => options.UseSqlServer("Server=DESKTOP-JB24L2U;Database=DatabaseSistemaContato;User Id=sa;Password=admin;"));
+    (options => options.UseSqlServer("Server=DESKTOP-M1NTML1\\SQLEXPRESS;Database=DatabaseSistemaContato;User Id=sa;Password=admin1535;"));
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 // Repositories
 builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
 builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
-
-builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<ISessao, Sessao>();
+
 builder.Services.AddSession(o =>
 {
     o.Cookie.HttpOnly = true;
