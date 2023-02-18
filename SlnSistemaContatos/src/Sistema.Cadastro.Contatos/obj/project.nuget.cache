@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z2UNH2jRk7IBhWbaemDiZ3WXJICVpTmXgsLZLL7Sqzh5w2s31Q/COU2AtBqf4zjkfmCWc+LxRoIHrblthz0HhA==",
+  "dgSpecHash": "cq+f39IZBLZPg9rRYBWTwp0/iL/Nu321SLjXVFHVmbDF+i9CrAA2+KGN7kJl8iqRcUyqWOUZJp2mWRFYAhdlqA==",
   "success": true,
-  "projectFilePath": "D:\\pedro\\Documents\\Sistema-de-Cadastro-de-Contatos-MVC\\SlnSistemaContatos\\src\\Sistema.Cadastro.Contatos\\Sistema.Cadastro.Contatos.csproj",
+  "projectFilePath": "D:\\Documents\\Sistema-de-Cadastro-de-Contatos-MVC\\SlnSistemaContatos\\src\\Sistema.Cadastro.Contatos\\Sistema.Cadastro.Contatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.12\\microsoft.aspnetcore.jsonpatch.6.0.12.nupkg.sha512",
